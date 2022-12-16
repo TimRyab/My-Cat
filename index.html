@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Cats</title>
+</head>
+<body>
+    <header>
+        <a href="/" class="header__logo">TimCats</a>
+        <nav class="header__menu">
+            <button id="open" class="header__btn open">+</button>
+        </nav>
+    </header>
+    <main>
+        <div class="container"></div>
+        <div class="overlay">
+            <div class="modal">
+                <h1>Add Cat</h1>
+                <form id="addCat" class="form">
+                    <div class="mb8">
+                        <input id="inp1" type="text" name="name" autocomplete="off" required>
+                        <label class="label" for="name">Name</label>
+                    </div>
+                    <div class="mb8">
+                        <input id="inp2" type="text" name="age" autocomplete="off" required>
+                        <label class="label" for="age">Age</label>
+                    </div>
+                    <div class="mb8">
+                        <input id="inp2" type="number" name="rate" min="1" max="10" autocomplete="off" required>
+                        <label class="label" for="rate">Raiting</label>
+                    </div>
+                    <div class="mb8">
+                        <input id="inp2" type="number" name="id" autocomplete="off" required>
+                        <label class="label" for="id">id</label>
+                    </div>
+                    <div class="mb8">
+                        <input id="inp2" type="text" name="img" autocomplete="off" required>
+                        <label class="label" for="img">Photo</label>
+                    </div>
+                </а>
+                <button type="submit" class="btn">Add</button>
+                <div class="close">
+                   ✖
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <span class="footer__copy">
+           Я в ТГ:
+        </span>
+        <span class="footer_made">
+            <a class="footer__author" target="_blank">https://t.me/timtyq</a>
+        </span>
+    </footer>
+    <script src="adder.js"></script>
+    <script src="modal.js"></script>
+</body>
+</html>
